@@ -454,28 +454,90 @@ footer {
 }
 
 /* Responsive constraints */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
+
+    /* Adjust general layout */
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+
+    /* Typography */
     .hero .title {
-        font-size: 3.5rem;
+        font-size: 3rem;
+        line-height: 1.2;
     }
 
     .hero .tagline {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
     }
 
     .hero .subtitle {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .section-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
     }
 
-    .vision-panel {
-        padding: 2rem;
-    }
-
+    /* Navigation - Hide links and let logo take center stage */
     .nav-links {
         display: none;
+    }
+
+    .nav-container {
+        justify-content: center;
+    }
+
+    /* Team grid adjustments */
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .team-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .member-name {
+        font-size: 1.6rem;
+    }
+
+    /* Vision section adjustments */
+    .vision-panel {
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .vision-block h3 {
+        font-size: 1.6rem;
+    }
+
+    .vision-block p {
+        font-size: 1.1rem;
+    }
+
+    /* Contact Links */
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contact-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .primary-btn {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
     }
 }
